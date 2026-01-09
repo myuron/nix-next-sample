@@ -2,6 +2,12 @@
   "name": "nix-next-sample",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "25.2.1",
+    "pnpm": "10.26.1",
+    "npm": "forbidden, use pnpm",
+    "yarn": "forbidden use pnpm"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
