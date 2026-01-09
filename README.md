@@ -3,6 +3,18 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 ## Getting Started
 
 First, run the development server:
+```bash
+mkdir nix-next-app
+flake init --template 'templates#trivial'
+vim flake.nix
+nix develop
+mv flake.nix ../
+rm flake-lock.json
+pnpm create next-app .
+mv ../flake.nix ./
+exit
+nix develop
+```
 
 ```bash
 npm run dev
